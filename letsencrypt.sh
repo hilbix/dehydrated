@@ -740,7 +740,7 @@ command_sign_domains() {
       valid="$(openssl x509 -enddate -noout -in "${cert}" | cut -d= -f2- )"
 
       printf " + Valid till %s " "${valid}"
-      if openssl x509 -checkend $((RENEW_DAYS * 86400)) -noout -in "${cert}"; then
+      if openssl x509 -checkend $((RENEW_DAYS * 86400)) -noout -in "${cert}" >/dev/null; then
         printf "(Longer than %d days). " "${RENEW_DAYS}"
         if [[ "${force_renew}" = "yes" ]]; then
           echo "Ignoring because renew was forced!"
