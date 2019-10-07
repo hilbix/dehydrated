@@ -379,7 +379,7 @@ signed_request() {
   payload64="$(printf '%s' "${2}" | urlbase64)"
 
   # Retrieve nonce from acme-server
-  nonce="$(http_request head "${CA}" | grep Replay-Nonce: | awk -F ': ' '{print $2}' | tr -d '\n\r')"
+  nonce="$(http_request head "${CA}" | grep -i Replay-Nonce: | awk -F ': ' '{print $2}' | tr -d '\n\r')"
 
   # Build header with just our public key and algorithm information
   header='{"alg": "RS256", "jwk": {"e": "'"${pubExponent64}"'", "kty": "RSA", "n": "'"${pubMod64}"'"}}'
