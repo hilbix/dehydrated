@@ -2,7 +2,7 @@
 
 As Debian now contains `dehydrated` as package and I trust Debian and hence the Debian Maintainers, this fork (to track changes on `dehydrated`) can be retired.
 
-I stopped to follow the changes before ACMEv2 was in place anyways, so this variant here stopped working with LetsEncrypt anyways.
+I stopped to follow the changes before ACMEv2 was in place, so this variant here stopped working with LetsEncrypt anyways.
 
 However ..
 
