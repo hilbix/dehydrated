@@ -6,7 +6,7 @@ I stopped to follow the changes before ACMEv2 was in place, so this variant here
 
 However ..
 
-.. [in the Wiki](../../wiki/) I have some **notes on how to use `dehydrated` on Debian** Buster and above (and probably will keep this updated when I need to change something).
+.. [in the Wiki there are some **notes on how to use `dehydrated` on Debian**]](../../wiki/) Buster and above (and probably will keep this updated when I need to change something).
 
 If there issues with what I write in the Wiki you still can open an issue here.  Perhaps I listen.
 
